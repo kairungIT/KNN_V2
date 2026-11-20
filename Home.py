@@ -66,6 +66,7 @@ if st.button("ทำนายผล"):
 
    X = dt.drop('variety', axis=1)
    y = dt.variety   
+   
    Knn_model = KNeighborsClassifier(n_neighbors=3)
    Knn_model.fit(X, y)  
 
