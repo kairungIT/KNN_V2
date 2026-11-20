@@ -136,7 +136,7 @@ with st.sidebar:
     st.divider()
     st.markdown("#### 📁 ชุดข้อมูล")
     source=st.radio("เลือกแหล่งข้อมูล",["ใช้ Heart3.csv ที่มาพร้อมแอป","อัปโหลดไฟล์ CSV"],label_visibility='collapsed')
-    default_file=Path(__file__).parent / 'Heart3.csv'
+    default_file=Path(__file__).parent / '/data/Heart3.csv'
     uploaded=None
     if source=="อัปโหลดไฟล์ CSV":
         uploaded=st.file_uploader("อัปโหลดไฟล์ข้อมูล",type=['csv'])
